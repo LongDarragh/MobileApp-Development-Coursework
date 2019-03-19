@@ -30,11 +30,10 @@ public class Database extends AppCompatActivity {
         this.insertStmt = Database.db.compileStatement(INSERT);
     }
 
-    public long insert(String name, String number, String email, String address) {
+    public long insert(String name, String email, String password) {
         this.insertStmt.bindString(1, name);
-        this.insertStmt.bindString(2, number);
-        this.insertStmt.bindString(3, email);
-        this.insertStmt.bindString(4, address);
+        this.insertStmt.bindString(2, email);
+        this.insertStmt.bindString(3, password);
         return this.insertStmt.executeInsert();
     }
 
@@ -44,13 +43,13 @@ public class Database extends AppCompatActivity {
 
     public List<String[]> selectAll() {
         List<String[]> list = new ArrayList<String[]>();
-        Cursor cursor = db.query(TABLE_NAME, new String[]{"id", "name", "number", "email", "address"}, null, null, null, null, "name asc");
+        Cursor cursor = db.query(TABLE_NAME, new String[]{"id", "name", "email", "password"}, null, null, null, null, "name asc");
         int x = 0;
         if (cursor.moveToFirst()) {
             do {
                 String[] b1 = new String[]{cursor.getString(0),
                         cursor.getString(1), cursor.getString(2),
-                        cursor.getString(3), cursor.getString(4)};
+                        cursor.getString(3)};
                 list.add(b1);
                 x++;
             } while (cursor.moveToNext());
@@ -70,7 +69,7 @@ public class Database extends AppCompatActivity {
         public void onCreate(SQLiteDatabase db) {
             db.execSQL("CREATE TABLE "
                     + TABLE_NAME
-                    + " (id INTEGER PRIMARY KEY, name TEXT, number TEXT, email TEXT, address TEXT)");
+                    + " (id INTEGER PRIMARY KEY, name TEXT, email TEXT, password TEXT)");
         }
 
         public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {

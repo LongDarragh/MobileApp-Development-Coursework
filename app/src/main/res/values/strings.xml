@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name"></string>
+    <string name="app_name2">Clothes</string>
+    <string name="app_name3">Login</string>
+    <string name="app_name4">Shopping Cart</string>
+    <string name="edittext">Username or Email</string>
+    <string name="edittext2">Password</string>
+
+</resources>

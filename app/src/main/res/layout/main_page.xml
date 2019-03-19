@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mainPage">
+
+    <ImageButton
+        android:id="@+id/button2"
+        android:layout_width="189dp"
+        android:layout_height="189dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="222dp"
+        android:background="@drawable/shirt1"
+        android:baselineAligned="false"
+        android:text="Shirts" />
+
+    <ImageButton
+        android:id="@+id/button4"
+        android:layout_width="189dp"
+        android:layout_height="189dp"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/polo1"
+        android:baselineAligned="false"
+        android:text="Polo-Shirts" />
+
+    <ImageButton
+        android:id="@+id/button5"
+        android:layout_width="189dp"
+        android:layout_height="189dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="259dp"
+        android:background="@drawable/tshirts1"
+        android:baselineAligned="false"
+        android:text="T-Shirts" />
+
+    <ImageButton
+        android:id="@+id/button6"
+        android:layout_width="189dp"
+        android:layout_height="189dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginBottom="245dp"
+        android:layout_toEndOf="@+id/button5"
+        android:background="@drawable/jacket1"
+        android:baselineAligned="false"
+        android:text="Jacket" />
+
+    <ImageButton
+        android:id="@+id/button7"
+        android:layout_width="189dp"
+        android:layout_height="189dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="501dp"
+        android:layout_marginEnd="222dp"
+        android:background="@drawable/jeans1"
+        android:baselineAligned="false"
+        android:text="Jeans" />
+
+    <ImageButton
+        android:id="@+id/button8"
+        android:layout_width="189dp"
+        android:layout_height="189dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="218dp"
+        android:layout_marginBottom="0dp"
+        android:background="@drawable/joggers1"
+        android:baselineAligned="false"
+        android:text="Joggers" />
+
+</RelativeLayout>

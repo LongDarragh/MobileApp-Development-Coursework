@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.cursework">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".mainPage"
+            android:label="@string/app_name2">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".loginPage"
+            android:label="@string/app_name3">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ShopCart"
+            android:label="ShoppingCart">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Registration"
+            android:label="Register">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".shirtsPage"
+            android:label="Shirts">
+        </activity>
+        <activity
+            android:name=".poloPage"
+            android:label="Polo-Shirts">
+        </activity>
+        <activity
+            android:name=".tshirtsPage"
+            android:label="T-Shirts">
+        </activity>
+        <activity
+            android:name=".jacketsPage"
+            android:label="Jackets">
+        </activity>
+        <activity
+            android:name=".jeansPage"
+            android:label="Jeans">
+        </activity>
+        <activity
+            android:name=".joggersPage"
+            android:label="Joggers">
+        </activity>
+    </application>
+
+</manifest>

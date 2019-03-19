@@ -54,28 +54,22 @@
         </activity>
         <activity
             android:name=".shirtsPage"
-            android:label="Shirts">
-        </activity>
+            android:label="Shirts"></activity>
         <activity
             android:name=".poloPage"
-            android:label="Polo-Shirts">
-        </activity>
+            android:label="Polo-Shirts"></activity>
         <activity
             android:name=".tshirtsPage"
-            android:label="T-Shirts">
-        </activity>
+            android:label="T-Shirts"></activity>
         <activity
             android:name=".jacketsPage"
-            android:label="Jackets">
-        </activity>
+            android:label="Jackets"></activity>
         <activity
             android:name=".jeansPage"
-            android:label="Jeans">
-        </activity>
+            android:label="Jeans"></activity>
         <activity
             android:name=".joggersPage"
-            android:label="Joggers">
-        </activity>
+            android:label="Joggers"></activity>
     </application>
 
 </manifest>

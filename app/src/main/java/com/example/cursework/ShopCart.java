@@ -53,7 +53,7 @@ public class ShopCart extends AppCompatActivity{
 
     //A button click to the success screen
     public void CheckOut(View view) {
-        Intent intent = new Intent(this, loginPage.class);
+        Intent intent = new Intent(this, mainPage.class);
         startActivity(intent);
     }
 

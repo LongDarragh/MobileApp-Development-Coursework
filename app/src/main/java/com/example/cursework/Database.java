@@ -10,6 +10,8 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 import android.database.sqlite.SQLiteStatement;
 
+//The database is used to save the user data when they register
+//And the source code is follow the practical 4b- Presistence with SQLite
 
 public class Database extends AppCompatActivity {
 
@@ -21,7 +23,7 @@ public class Database extends AppCompatActivity {
     private SQLiteStatement insertStmt;
 
     private static final String INSERT = "insert into " + TABLE_NAME
-            + " (name,number,email,address) values (?,?,?,?)";
+            + " (name,email,password) values (?,?,?)";
 
     public Database(Context context) {
         Database.context = context;
@@ -79,10 +81,4 @@ public class Database extends AppCompatActivity {
         }
     }
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_database);
-    }
 }

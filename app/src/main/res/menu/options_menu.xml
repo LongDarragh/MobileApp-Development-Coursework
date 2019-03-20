@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/profile"
+        android:title="Profile" />
+    <item android:id="@+id/shopping_cart"
+        android:title="Shopping Cart" />
+    <item android:id="@+id/Upload_item"
+        android:title="Upload" />
+    <item android:id="@+id/Clothes"
+        android:title="Clothes" />
+    <item android:id="@+id/notification"
+        android:title="Notification" />
+    <item android:id="@+id/setting"
+        android:title="Setting" />
+
+</menu>

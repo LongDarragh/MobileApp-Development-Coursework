@@ -15,12 +15,15 @@ public class loginPage extends AppCompatActivity {
         defineButtons();
     }
 
+//    To define different button on loginPage.
     public void defineButtons()
     {
         findViewById(R.id.login).setOnClickListener(buttonClickListener);
         findViewById(R.id.Register).setOnClickListener(buttonClickListener);
     }
 
+//    A switch statement can pass though the different button
+//    to different activity.
     private View.OnClickListener buttonClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View view) {

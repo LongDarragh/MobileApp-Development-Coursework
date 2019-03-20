@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -36,7 +37,7 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="0dp"
-        android:layout_marginTop="259dp"
+        android:layout_marginTop="188dp"
         android:background="@drawable/tshirts1"
         android:baselineAligned="false"
         android:text="T-Shirts" />
@@ -47,7 +48,7 @@
         android:layout_height="189dp"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="33dp"
-        android:layout_marginBottom="245dp"
+        android:layout_marginBottom="224dp"
         android:layout_toEndOf="@+id/button5"
         android:background="@drawable/jacket1"
         android:baselineAligned="false"
@@ -59,8 +60,8 @@
         android:layout_height="189dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginTop="501dp"
-        android:layout_marginEnd="222dp"
+        android:layout_marginTop="378dp"
+        android:layout_marginEnd="219dp"
         android:background="@drawable/jeans1"
         android:baselineAligned="false"
         android:text="Jeans" />
@@ -71,12 +72,11 @@
         android:layout_height="189dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="218dp"
-        android:layout_marginBottom="0dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginBottom="37dp"
         android:background="@drawable/joggers1"
         android:baselineAligned="false"
         android:text="Joggers" />
-
 
 
 </RelativeLayout>

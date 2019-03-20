@@ -17,11 +17,15 @@ public class mainPage extends AppCompatActivity{
 
         defineButtons();
     }
+
+    //Load Android option menu from an activity
     @Override
     public boolean onCreateOptionsMenu(Menu menu){
         getMenuInflater().inflate(R.menu.options_menu,menu);
         return true;
     }
+
+    //this use to handle a option menu item click events
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
         Toast.makeText(this,"Selected Item:" +item.getTitle(),Toast.LENGTH_SHORT).show();

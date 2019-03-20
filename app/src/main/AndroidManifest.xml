@@ -54,22 +54,58 @@
         </activity>
         <activity
             android:name=".shirtsPage"
-            android:label="Shirts"></activity>
+            android:label="Shirts">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".poloPage"
-            android:label="Polo-Shirts"></activity>
+            android:label="Polo-Shirts">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".tshirtsPage"
-            android:label="T-Shirts"></activity>
+            android:label="T-Shirts">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".jacketsPage"
-            android:label="Jackets"></activity>
+            android:label="Jackets">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".jeansPage"
-            android:label="Jeans"></activity>
+            android:label="Jeans">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".joggersPage"
-            android:label="Joggers"></activity>
+            android:label="Joggers">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

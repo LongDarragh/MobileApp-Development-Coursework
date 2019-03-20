@@ -12,7 +12,7 @@
         android:layout_width="156dp"
         android:layout_height="70dp"
         android:layout_marginStart="124dp"
-        android:layout_marginTop="516dp"
+        android:layout_marginTop="496dp"
         android:onClick="CheckOut"
         android:text="Check Out"
         android:textSize="20dp"

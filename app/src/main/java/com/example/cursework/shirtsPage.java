@@ -5,15 +5,57 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
 import android.widget.Toast;
+import android.view.View;
+import android.widget.CheckBox;
 
 public class shirtsPage extends AppCompatActivity {
+    CheckBox shirts1, shirts2, shirts3;
 
     @Override
     protected void onCreate(Bundle savesInstanceState){
         super.onCreate(savesInstanceState);
         setContentView(R.layout.shirts);
+        shirts1 = (CheckBox)findViewById(R.id.checkBox);
+        shirts2 = (CheckBox)findViewById(R.id.checkBox2);
+        shirts3 = (CheckBox)findViewById(R.id.checkBox3);
+        Button btn = (Button)findViewById(R.id.button9);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                String result = "Selected Courses";
+                if(shirts1.isChecked()){
+                    result += "\nSlim fit";
+                }
+                if(shirts2.isChecked()){
+                    result += "\nRegular fit";
+                }
+                if(shirts3.isChecked()){
+                    result += "\nRegular fit";
+                }
+                Toast.makeText(getApplicationContext(), result, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
+    public void onCheckboxClicked(View view) {
+        boolean checked = ((CheckBox) view).isChecked();
+        String str="";
+        // Check which checkbox was clicked
+        switch(view.getId()) {
+            case R.id.checkBox:
+                str = checked?"Slim fit shirts Selected":"Slime fit shirts Deselected";
+                break;
+            case R.id.checkBox2:
+                str = checked?"Regular fit shirts Selected":"Regular fit shirts Deselected";
+                break;
+            case R.id.checkBox3:
+                str = checked?" Regular fir shirts Selected":"Regular fit shirts Deselected";
+                break;
+        }
+        Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show();
+    }
+
 
     //Load Android option menu from an activity
     @Override

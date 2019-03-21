@@ -24,7 +24,7 @@ public class shirtsPage extends AppCompatActivity {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String result = "Selected Courses";
+                String result = "Selected Item";
                 if(shirts1.isChecked()){
                     result += "\nSlim fit";
                 }
@@ -54,6 +54,7 @@ public class shirtsPage extends AppCompatActivity {
                 break;
         }
         Toast.makeText(getApplicationContext(), str, Toast.LENGTH_SHORT).show();
+
     }
 
 
@@ -91,5 +92,4 @@ public class shirtsPage extends AppCompatActivity {
                 return super.onOptionsItemSelected(item);
         }
     }
-
 }

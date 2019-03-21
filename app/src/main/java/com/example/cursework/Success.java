@@ -14,7 +14,8 @@ public class Success extends AppCompatActivity {
         setContentView(R.layout.success);
     }
 
-    public void onClick(View view){
+
+    public void Success(View view) {
         Intent intent = new Intent(Success.this, mainPage.class);
         startActivity(intent);
     }

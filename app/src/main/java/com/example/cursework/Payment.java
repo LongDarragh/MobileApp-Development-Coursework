@@ -8,8 +8,11 @@ import android.text.InputType;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+import android.content.Intent;
 
 import com.braintreepayments.cardform.view.CardForm;
+
+//this payment method is referencing from google developer android tutorial
 
 public class Payment extends AppCompatActivity {
 
@@ -47,6 +50,8 @@ public class Payment extends AppCompatActivity {
                         public void onClick(DialogInterface dialogInterface, int i) {
                             dialogInterface.dismiss();
                             Toast.makeText(Payment.this, "Thank you for purchase", Toast.LENGTH_LONG).show();
+                            Intent intent = new Intent(Payment.this, Success.class);
+                            startActivity(intent);
                         }
                     });
                     alertBuilder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {

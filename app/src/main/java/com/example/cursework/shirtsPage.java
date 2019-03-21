@@ -70,22 +70,22 @@ public class shirtsPage extends AppCompatActivity {
         Toast.makeText(this,"Selected Item:" +item.getTitle(),Toast.LENGTH_SHORT).show();
         switch (item.getItemId()){
             case R.id.profile:
-                // do your code
+                // not available yet
                 return true;
             case R.id.shopping_cart:
                 startActivity(new Intent(shirtsPage.this, ShopCart.class));
                 return true;
             case R.id.Upload_item:
-                // do your code
+                // not available yet
                 return true;
             case R.id.Clothes:
                 startActivity(new Intent(shirtsPage.this, mainPage.class));
                 return true;
             case R.id.notification:
-                // do your code
+                // not available yet
                 return true;
             case R.id.setting:
-                // do your code
+                // not available yet
                 return true;
             default:
                 return super.onOptionsItemSelected(item);

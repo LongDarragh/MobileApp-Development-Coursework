@@ -68,7 +68,7 @@ public class shirtsPage extends AppCompatActivity {
     //this use to handle a option menu item click events
     @Override
     public boolean onOptionsItemSelected(MenuItem item){
-        Toast.makeText(this,"Selected Item:" +item.getTitle(),Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,"Add Item:" +item.getTitle(),Toast.LENGTH_SHORT).show();
         switch (item.getItemId()){
             case R.id.profile:
                 // not available yet
